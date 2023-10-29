@@ -27,3 +27,11 @@ Route::get('/', function () {
     return view('planets', ['planets' => $planeten]);
 });
 
+//opdracht 3
+$planet = request('planet');
+
+if (request()->has('planet')) {
+    // Voer code uit als de 'planet' GET-parameter aanwezig is
+} else {
+    // Voer code uit als de 'planet' GET-parameter ontbreekt
+}
