@@ -35,3 +35,10 @@ if (request()->has('planet')) {
 } else {
     // Voer code uit als de 'planet' GET-parameter ontbreekt
 }
+
+
+//opdracht 4
+use App\Http\Controllers\PlanetController;
+
+Route::get('/planets', [PlanetController::class, 'index']);
+Route::get('/planets/{planet}', [PlanetController::class, 'show']);
